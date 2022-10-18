@@ -13,7 +13,7 @@ Install `tmux`:
 ```bash
 sudo apt install -y tmux
 # OR
-brew install tmux
+brew install tmux cmake
 ```
 
 Symlink directories:
@@ -23,7 +23,7 @@ ln -s ~/.config/tmux/tmux.conf ~/.tmux.conf
 ln -s ~/.config/tmux/plugins ~/.tmux/plugins
 ```
 
-Install tmux [plugin manager](https://github.com/tmux-plugins/tpm):
+Install `tpm` [plugin manager](https://github.com/tmux-plugins/tpm):
 
 ```bash
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
