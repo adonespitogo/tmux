@@ -11,7 +11,7 @@ git clone git@github.com:adonespitogo/tmux.git ~/.config/tmux
 
 Install `tmux`:
 ```bash
-sudo apt install -y tmux
+sudo apt install -y tmux build-essential
 # OR
 brew install tmux cmake
 ```
