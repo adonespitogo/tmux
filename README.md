@@ -12,7 +12,9 @@ git clone git@github.com:adonespitogo/tmux.git ~/.config/tmux
 Install `tmux`:
 ```bash
 sudo apt install -y tmux cmake
-# OR
+```
+If on MacOS:
+```bash
 brew install tmux cmake
 ```
 
