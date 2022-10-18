@@ -1,15 +1,11 @@
 # tmux
 My tmux config.
 
-## Prerequisites
-
-```sh
-brew install tmux-mem-cpu-load
-```
-
 ## Installation
 
-You may need to link the tmux config to your home directory:
+Install tmux [plugin manager](https://github.com/tmux-plugins/tpm):
+
+You may need to link `~/.tmux.conf`:
 
 ```sh
 ln -s ~/.config/tmux/tmux.conf ~/.tmux.conf
