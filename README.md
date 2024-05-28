@@ -1,6 +1,13 @@
 # tmux
 My tmux config.
 
+## Keymaps
+
+`C-space + S` - join panes horizontally
+`C-space + V` - join panes vertically
+`C-space + W` - break panes to separate window
+`C-space + Space` - toggle layout vertical/horizontal
+
 ## Installation
 
 clone this repo:
