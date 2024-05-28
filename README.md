@@ -33,3 +33,9 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
 Run `tmux` and press `prefix` + `I` to install the plugins.
+
+Fix missing loading icons on Gnome:
+
+```sh
+paru -S gnome-characters
+```
