@@ -1,6 +1,13 @@
 # tmux
 My tmux config.
 
+## Keymaps
+
+`C-space + S` - join panes horizontally
+`C-space + V` - join panes vertically
+`C-space + W` - break panes to separate window
+`C-space + Space` - toggle layout vertical/horizontal
+
 ## Installation
 
 clone this repo:
@@ -33,3 +40,9 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
 Run `tmux` and press `prefix` + `I` to install the plugins.
+
+Fix missing loading icons on Gnome:
+
+```sh
+paru -S gnome-characters
+```
