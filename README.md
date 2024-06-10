@@ -7,6 +7,8 @@ My tmux config.
 `C-space + V` - join panes vertically
 `C-space + W` - break panes to separate window
 `C-space + Space` - toggle layout vertical/horizontal
+`C-space + {` - swap-pane -U
+`C-space + }` - swap-pane -D
 
 ## Installation
 
