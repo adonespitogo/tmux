@@ -18,6 +18,12 @@ mkdir -p ~/.config
 git clone git@github.com:adonespitogo/tmux.git ~/.config/tmux
 ```
 
+Edit `~/.bashrc` or `~/.zshrc`:
+
+```sh
+export TERM=screen-256color-bce
+```
+
 Install `tmux`:
 ```bash
 sudo apt install -y tmux cmake
