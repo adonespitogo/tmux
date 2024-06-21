@@ -7,6 +7,8 @@ My tmux config.
 `C-space + V` - join panes vertically
 `C-space + W` - break panes to separate window
 `C-space + Space` - toggle layout vertical/horizontal
+`C-space + {` - swap-pane -U
+`C-space + }` - swap-pane -D
 
 ## Installation
 
@@ -14,6 +16,12 @@ clone this repo:
 ```
 mkdir -p ~/.config
 git clone git@github.com:adonespitogo/tmux.git ~/.config/tmux
+```
+
+Edit `~/.bashrc` or `~/.zshrc`:
+
+```sh
+export TERM=screen-256color-bce
 ```
 
 Install `tmux`:
