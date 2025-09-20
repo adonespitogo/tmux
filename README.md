@@ -1,18 +1,21 @@
 # tmux
+
 My tmux config.
+
+---
 
 ## Keymaps
 
-`C-space + S` - join panes horizontally
-`C-space + V` - join panes vertically
-`C-space + W` - break panes to separate window
-`C-space + Space` - toggle layout vertical/horizontal
-`C-space + {` - swap-pane -U
-`C-space + }` - swap-pane -D
+- `C-space + S` - join panes horizontally
+- `C-space + V` - join panes vertically
+- `C-space + W` - break panes to separate window
+- `C-space + Space` - toggle layout vertical/horizontal
+- `C-space + {` - swap-pane -U
+- `C-space + }` - swap-pane -D
 
 ## Installation
 
-clone this repo:
+Clone this repo:
 ```
 mkdir -p ~/.config
 git clone git@github.com:adonespitogo/tmux.git ~/.config/tmux
@@ -24,27 +27,28 @@ Edit `~/.bashrc` or `~/.zshrc`:
 export TERM=screen-256color-bce
 ```
 
-Install `tmux`:
-```bash
-sudo apt install -y tmux cmake
+---
+
+### Arch Linux:
+
+```sh
+pacman -Sy tmux cmak bash bc coreutils git jq playerctl
 ```
-If on MacOS:
+
+### MacOS:
 ```bash
 brew install tmux cmake
-# Make sure to disable keyboard shortcut for `Input Sources` switching which conflicts with tmux prefix `^Space` (Ctrl + Space).
+brew install --cask font-monaspace-nerd-font font-noto-sans-symbols-2
+brew install bash bc coreutils gawk gh glab gsed jq nowplaying-cli
 ```
 
-Symlink directories:
-```bash
-mkdir -p ~/.tmux ~/.config/tmux/plugins
-ln -s ~/.config/tmux/tmux.conf ~/.tmux.conf
-ln -s ~/.config/tmux/plugins ~/.tmux/plugins
-```
+Make sure to disable keyboard shortcut for `Input Sources` switching which conflicts with tmux prefix `^Space` (Ctrl + Space).
 
-Install `tpm` [plugin manager](https://github.com/tmux-plugins/tpm):
+Run the install script:
 
 ```bash
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+cd ~/.config/tmux && \
+    ./install.sh
 ```
 
 Run `tmux` and press `prefix` + `I` to install the plugins.
